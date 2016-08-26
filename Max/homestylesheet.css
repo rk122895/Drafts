@@ -1,3 +1,6 @@
+body{
+    background-color: #F0F7FF;
+}
 a {
     text-decoration: none;
 }
@@ -43,12 +46,57 @@ a:hover {
 
 /*search bar styling*/
 
-#search {
-    padding-bottom: 2px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
-    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
-    /*add animations from old search bar when home*/
+#search input[type="text"] {
+    background-color: indianred;
+    height: 24px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, Sans-serif, sans-serif;
+    margin: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+}
+#search input[type="text"]:focus {
+    background-color: aliceblue;
+    height: 24px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, Sans-serif, sans-serif;
+    margin: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    -webkit-transition: all 0.7s ease-in-out 0s;
+    -moz-transition: all 0.7s ease-in 0s;
+    -ms-transition: all 0.7s ease-in 0s;
+    -o-transition: all 0.7s ease-in 0s;
+    transition: all 0.7s ease-in 0s;
+}
+#search input[type="text"]:hover {
+    background-color: aliceblue;
+    height: 24px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, Helvetica, Sans-serif, sans-serif;
+    margin: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+    -webkit-transition: all 0.7s ease-in-out 0.3s;
+    -moz-transition: all 0.7s ease-in-out 0.3s;
+    -ms-transition: all 0.7s ease-in-out 0.3s;
+    -o-transition: all 0.7s ease-in-out 0.3s;
+    transition: all 0.7s ease-in-out 0.3s;
 }
 
 /*nav bar css*/
@@ -84,37 +132,63 @@ a:hover {
 }
 
 /*LEFT SIDE CSS*/
+
+
 /*classes: left-modules
 id: groups, friends
 elements: aside h1*/
-.left{
-    display: inline;
+
+.left {
+    display: block;
     width: 23%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 100%;
 }
-.left-modules{
-    background-color: blue;
+.left h2 {
+    align-content: center;
+    text-align: center;
+}
+.left-modules {
     float: left;
     text-align: center;
     border-radius: 10px;
     display: inline-grid;
 }
-.circle {
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
-    background-color: orange;
-	/* width and height can be anything, as long as they're equal */
+.friends-enemies {
+    border: 4px solid #831515;
+    border-radius: 7px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+    align-content: center;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
 }
-
+#friends-container {
+    margin-top: 1px;
+}
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    /* width and height can be anything, as long as they're equal */
+}
 
 /*MAIN CONTAINER*/
+.mainContent{
+    width: auto 44%;
+    margin: 10% 10% 10% 10%;
+
+}
 /*classes: div mainContent, div content, post, post-title, post-user-info, post-content, post-text
 */
-.mainContent{
-background-color: green;
-}
 
-.right-sidebar{
+
+.right-sidebar {
+    width: 23%;
     background-color: purple;
     float: right;
     text-align: left;
