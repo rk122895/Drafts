@@ -1,45 +1,121 @@
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #000305;
+}
+a:hover {
+    color: #cd1400;
+    text-decoration: underline;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Lucidia sans serif';
+}
+.mainHeader nav {
+    background-color: #831515;
+    height: 36px;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mainHeader nav h1 {
+    float: left;
+    display: inline;
+}
+.mainHeader nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+.mainHeader nav ul li {
+    float: left;
+    display: inline;
+}
+.search_box {
+    /*add a search icon or something*/
+    background-color: #831515;
+    position: absolute;
+    top: 5px;
+    margin-left: 30%;
+    margin-bottom: -10px;
 }
 
-a:link, a:visited{
-  color:#000305;
+/*search bar styling*/
+
+#search {
+    padding-bottom: 2px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
+    /*add animations from old search bar when home*/
 }
 
-a:hover{
-  color: #FF1A00;
-  text-decoration: underline;
+/*nav bar css*/
+
+.mainHeader nav {
+    /*mozilla*/
+    /*IE */
+}
+.mainHeader nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+.mainHeader nav ul li {
+    float: right;
+    display: inline;
+}
+.mainHeader nav ul li a:link, .mainHeader nav a:visited {
+    display: inline-block;
+    padding-top: 8px;
+    margin: 0px 7px;
+    /*come back here to assign height*/
+    /*text height -(paddingheight*2)*/
+}
+.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+    text-shadow: none;
+}
+.mainHeader nav a:hover, a:focus {
+    color: #fff;
+}
+.mainHeader nav ul li a {
+    /*mozilla*/
+    /*IE */
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, 'Lucidia sans serif';
+/*LEFT SIDE CSS*/
+/*classes: left-modules
+id: groups, friends
+elements: aside h1*/
+.left{
+    display: inline;
+    width: 23%;
+}
+.left-modules{
+    background-color: blue;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-grid;
+}
+.circle {
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+    background-color: orange;
+	/* width and height can be anything, as long as they're equal */
 }
 
-.mainHeader nav{
-  background-color: #831515;
-  height: 35px;
-  width: 100%;
-  padding-top:0px;
-  padding-bottom: 0px;
-}
-.mainHeader nav h1{
-  float:left;
-  display: inline;
+
+/*MAIN CONTAINER*/
+/*classes: div mainContent, div content, post, post-title, post-user-info, post-content, post-text
+*/
+.mainContent{
+background-color: green;
 }
 
-.mainHeader nav form{
-  float: left;
-  display: inline;
-}
-
-.mainHeader nav ul{
-  list-style: none;
-  margin: 0 auto;
-}
-
-.mainHeader nav ul li{
-  float:left;
-  display: inline;
+.right-sidebar{
+    background-color: purple;
+    float: right;
+    text-align: left;
 }

@@ -10,49 +10,130 @@
 </head>
 
 <body id="body">
-        <!-- nav bar-->
-        <header class="mainHeader">
-            <nav>
-                <!--replace with image when obtained?-->
-                <h1><a href="#">Logo</a></h1>
-                <form>
-                    <input type="text" name="search" placeholder="search..">
-                </form>
-                <ul>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">NP</a></li>
-                    <li>x</li>
-                    <li><a href="#">PP</a></li>
-                    <li>y</li>
-                </ul>
-            </nav>
-        </header>
+    <!-- nav bar-->
+    <div class="search_box">
+        <form>
+            <input type="text" id="search" name="search" size="76" placeholder="search..">
+        </form>
+    </div>
+    <header class="mainHeader">
+        <nav>
+            <!--replace with image when obtained?-->
+            <h1><a href="#">Logo</a></h1>
+            <!--PUT METHOD IN THE DIV CLASS-->
+
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">NP:</a>x</li>
+                <li><a href="#">PP:</a>y</li>
+            </ul>
+        </nav>
+    </header>
     <!--<div class="left-content">-->
-    <aside class="left-modules" id="groups">
-        <h1><a href="#">Groups</a></h1>
-        <!-- replace with picture when time comes?-->
-        <!--add pictures to represent profiles for now-->
-        <!--left and right buttons to switch between groups? top bottom? scroll? search? -->
-        <!--SHOULD ACT AS A MODULE-->
-    </aside>
-    <aside class="left-modules" id="friends">
-        <h1><a href="#">Allies/Enemies</a></h1>
-        <!--replace with pictures when times comes-->
-        <!--left right buttons? top bottom buttons? scroll? search? -->
-        <!--SHOULD ACT AS A MODULE-->
-    </aside>
+    <div class="left">
+        <h1>Groups</h1>
+        <table class="left-modules" id="groups">
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+        </table>
+
+        <h1>Allies and Enemies</h1>
+        <table class="left-modules" id="friends">
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+            <tr>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+                <th class="circle">p</th>
+            </tr>
+        </table>
+    </div>
     <!--</div>-->
     <div class="mainContent">
         <div class="content">
             <!--FIND A WAY TO DIFFERENTIATE BETWEEN GROUP AND PERSON-->
             <!--different post css for groups?-->
             <article class="post">
-                <header>
+                <header class="post-title">
                     <h1><a href="#">Title</a></h1>
                 </header>
-                <footer>
+                <footer class="post-user-info">
+                    <p>User info and small <a href=#>profile pic</a></p>
+                </footer>
+                <content class="post-content">
+                    <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </content>
+            </article>
+
+            <article class="post">
+                <header class="post-title">
+                    <h1><a href="#">Title</a></h1>
+                </header>
+                <footer class="post-user-info">
                     <p>User info and small <a href=#>profile pic</a></p>
                 </footer>
                 <content>
@@ -62,23 +143,10 @@
             </article>
 
             <article class="post">
-                <header>
+                <header class="post-title">
                     <h1><a href="#">Title</a></h1>
                 </header>
-                <footer>
-                    <p>User info and small <a href=#>profile pic</a></p>
-                </footer>
-                <content>
-                    <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </content>
-            </article>
-
-            <article class="post">
-                <header>
-                    <h1><a href="#">Title</a></h1>
-                </header>
-                <footer>
+                <footer class="post-user-info">
                     <p>User info and small <a href=#>profile pic</a></p>
                 </footer>
                 <content>
@@ -88,10 +156,10 @@
             </article>
 
             <article class="post group">
-                <header>
+                <header class="post-title">
                     <h1><a href="#">Title</a></h1>
                 </header>
-                <footer>
+                <footer class="post-user-info">
                     <p>User info and small <a href=#>profile pic</a></p>
                 </footer>
                 <content>
