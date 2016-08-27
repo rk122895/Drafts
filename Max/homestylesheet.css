@@ -148,22 +148,21 @@ elements: aside h1*/
 .left h2 {
     align-content: center;
     text-align: center;
+    margin-top: 1%;
 }
 .left-modules {
-    float: left;
     text-align: center;
     border-radius: 10px;
     display: inline-grid;
 }
 .friends-enemies {
-    border: 4px solid #831515;
+    margin-top: 2%;
     border-radius: 7px;
     -webkit-box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
     align-content: center;
     float: left;
-    margin-top: 1%;
     margin-left: 1%;
 }
 #friends-container {
@@ -173,23 +172,99 @@ elements: aside h1*/
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: orange;
+    background-image:url("images/placeholder.png");
+    background-size: contain;
     /* width and height can be anything, as long as they're equal */
 }
 
 /*MAIN CONTAINER*/
 .mainContent{
-    width: auto 44%;
-    margin: 10% 10% 10% 10%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[name="post"]{
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    font-size: 15px;
+    padding: 0;
+    width: 0;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    outline: none;
+}
+
+input[name="post"]:hover{
+    border: 1px solid #006FC4;
+}
+
+input[type="submit"]{
+    background-color: #f03342;
+    border: 1px solid transparent;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border-radius: 4px;
+}
+
+#postSecurity{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
 
 }
-/*classes: div mainContent, div content, post, post-title, post-user-info, post-content, post-text
-*/
 
 
-.right-sidebar {
-    width: 23%;
-    background-color: purple;
-    float: right;
+#post{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 1%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
     text-align: left;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+}
+
+#submitPost{
+    align-content: right;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+
+}
+.post{
+    margin: 2% auto;
+    background-color: #FFFFFE;
+    border-radius: 5px;
+}
+.post-user-info, .post-user-info a{
+    font-style: italic;
+    color: #666666;
+    text-decoration: none;
+}
+.post-text{
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+}
+
+.post-title, .post-title h1 a, .post-group, .post-group h1 a{
+    color: #a91331;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.right-sidebar{
+    float: right;
+    width: 22%;
+    margin-top: inherit;
 }
