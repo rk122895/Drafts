@@ -1,0 +1,13 @@
+.search_box{
+	position:fixed;
+	top: 5px;
+	background-color: #831515;
+	margin-left: 60%;
+	margin-bottom: -10px;
+}
+.mainHeader {
+	height: 36px;
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
