@@ -1,3 +1,8 @@
+/*
+CSS to make a grid
+for reference go to this link
+http://j4n.co/blog/Creating-your-own-css-grid-system
+*/
 .container {
     width: 100%;
     max-width: 1265px;
@@ -33,3 +38,79 @@
     min-height: 1px;
     width: 50%;
 }
+/*body elements*/
+/*nav bar css*/
+.brand-image{
+    display: inline;
+    float: left;
+}
+.navbar-form .searchbar{
+    display: inline;
+    float: left;
+}
+.submit-btn{
+    display: inline;
+    float: left;
+}
+
+.navbar-list li{
+    text-decoration: none;
+    display: inline;
+    float: left;
+    background-color: red;
+}
+/*dropdown items*/
+/* Style The Dropdown Button */
+.dropdown-btn {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navbar-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.navbar-dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
+}
+
+/*left container*/
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image:url("images/placeholder.png");
+    background-size: contain;
+    /* width and height can be anything, as long as they're equal */
+}
+/*mid container*/
+/*right container*/

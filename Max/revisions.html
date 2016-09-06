@@ -12,18 +12,18 @@
 
 <body>
     <!-- nav bar-->
-    <header>
+    <header class="mainHeader">
         <div class="container navbar">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!--where we would put our logo-->
-                    <span class="brand image">Sample text</span>
+                    <span class="brand-image">Sample text</span>
                     <!--Search bar + button, will be changed in final to no button, auto searching and enter = search-->
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control searchbar" placeholder="Find new discussions">
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="submit-btn btn-default">Submit</button>
                     </form>
                     <!--traditional list-->
                     <ul class="navbar-list">
@@ -34,13 +34,14 @@
                         <li class="navbar-links"><a href="#">Sample</a></li>
                     </ul>
                     <!-- dropdown list -->
-                    <ul class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <li class="dropdown-links"><a href="#">Sample</a></li>
-                        <li class="dropdown-links"><a href="#">Sample</a></li>
-                        <li class="dropdown-links"><a href="#">Sample</a></li>
-                        <li class="dropdown-links"><a href="#">Sample</a></li>
-                    </ul>
+                    <div class="navbar-dropdown">
+                        <button class="dropdown-btn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -49,9 +50,91 @@
     <!--content start-->
     <div class="container">
         <div class="row">
-            <div class="col-4">sample</div>
-            <div class="col-8">sample</div>
-            <div class="col-4">sample</div>
+            <!-- left content-->
+            <div class="col-4 left-content">sample
+                <div class="row">
+                    <h2>Users</h2>
+                    <table class="left-modules" id="friends">
+                        <tr>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                        </tr>
+                        <tr>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                        </tr>
+                        <tr>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                        </tr>
+                        <tr>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                        </tr>
+                        <tr>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                            <th class="circle"></th>
+                        </tr>
+                    </table>
+                </div>
+                <h2>Groups</h2>
+                <table class="left-modules" id="groups">
+                    <tr>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                    </tr>
+                    <tr>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                    </tr>
+                    <tr>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                    </tr>
+                    <tr>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                    </tr>
+                    <tr>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                        <th class="circle"></th>
+                    </tr>
+                </table>
+            </div>
+            <!-- main content -->
+            <div class="col-8 main-content">sample</div>
+            <!-- right content-->
+            <div class="col-4 right-content">sample</div>
         </div>
     </div>
 </body>
