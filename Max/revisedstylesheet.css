@@ -5,7 +5,7 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
 */
 .container {
     width: 100%;
-    max-width: 1265px;
+    max-width: 100%;
 }
 
 .row:before, .row:after {
@@ -18,25 +18,25 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
     float: left;
     min-height: 1px;
 }
-
+/*
 [class*='col-'] {
     float: left;
     min-height: 1px;
     width: 16.66%;
 }
-
-.col-4 {
+*/
+.col-3 {
     background-color: red;
     float: left;
     min-height: 1px;
-    width: 25%;
+    width: 20%;
 }
 
-.col-8 {
+.col-9 {
     background-color: blue;
     float: left;
     min-height: 1px;
-    width: 50%;
+    width: 60%;
 }
 /*body elements*/
 /*nav bar css*/
@@ -57,13 +57,12 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
     text-decoration: none;
     display: inline;
     float: left;
-    background-color: red;
+    background-color: #fff;
 }
 /*dropdown items*/
 /* Style The Dropdown Button */
 .dropdown-btn {
-    background-color: green;
-    color: white;
+    background-color: #fff;
     border: none;
 }
 
@@ -100,7 +99,7 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .navbar-dropdown:hover .dropdown-btn {
-    background-color: #3e8e41;
+    background-color: #fff;
 }
 
 /*left container*/
@@ -111,6 +110,10 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
     background-image:url("images/placeholder.png");
     background-size: contain;
     /* width and height can be anything, as long as they're equal */
+}
+.left-modules{
+    margin: auto; /*centers it easily*/
+    text-align: center;
 }
 /*mid container*/
 /*right container*/

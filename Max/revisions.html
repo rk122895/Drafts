@@ -17,7 +17,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!--where we would put our logo-->
-                    <span class="brand-image">Sample text</span>
+                    <span class="brand-image">Brand/Logo</span>
                     <!--Search bar + button, will be changed in final to no button, auto searching and enter = search-->
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -51,9 +51,9 @@
     <div class="container">
         <div class="row">
             <!-- left content-->
-            <div class="col-4 left-content">sample
+            <div class="col-3 left-content">
                 <div class="row">
-                    <h2>Users</h2>
+                    <h2 class="left-modules">Users</h2>
                     <table class="left-modules" id="friends">
                         <tr>
                             <th class="circle"></th>
@@ -92,7 +92,7 @@
                         </tr>
                     </table>
                 </div>
-                <h2>Groups</h2>
+                <h2 class="left-modules">Groups</h2>
                 <table class="left-modules" id="groups">
                     <tr>
                         <th class="circle"></th>
@@ -132,9 +132,92 @@
                 </table>
             </div>
             <!-- main content -->
-            <div class="col-8 main-content">sample</div>
+            <div class="col-9 main-content">sample
+                <div class="row">
+                    <form title="posting">
+                        <input id="post" type="text" name="post" size="25" placeholder="Let Start a flame war">
+                        <div id="postButtons">
+                            <select id="postSecurity">
+                                <option value="postProfile">Post using profile</option>
+                                <option value="postAnonymous">Post anonymously</option>
+                            </select>
+                            <input id="submitPost" type="submit" name="submitPost" value="Post">
+                        </div>
+                    </form>
+                    <article class="post">
+                        <header class="post-title">
+                            <h1><a href="#">Sample Text</a></h1>
+                        </header>
+                        <footer class="post-user-info">
+                            <p>User info and small <a href=#>profile pic</a></p>
+                        </footer>
+                        <content class="post-content">
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </content>
+                    </article>
+
+                    <article class="post">
+                        <header class="post-title">
+                            <h1><a href="#">Sample Text</a></h1>
+                        </header>
+                        <footer class="post-user-info">
+                            <p>User info and small <a href=#>profile pic</a></p>
+                        </footer>
+                        <content>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </content>
+                    </article>
+
+                    <article class="post">
+                        <header class="post-title">
+                            <h1><a href="#">Sample Text</a></h1>
+                        </header>
+                        <footer class="post-user-info">
+                            <p>User info and small <a href=#>profile pic</a></p>
+                        </footer>
+                        <content>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </content>
+                    </article>
+
+                    <article class="post group">
+                        <header class="post-title">
+                            <h1><a href="#">Title</a></h1>
+                        </header>
+                        <footer class="post-user-info">
+                            <p>User info and small <a href=#>profile pic</a></p>
+                        </footer>
+                        <content>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </content>
+                    </article>
+                </div>
+            </div>
             <!-- right content-->
-            <div class="col-4 right-content">sample</div>
+            <div class="col-3 right-content">
+                <div class="row">
+                    <aside class="right-sidebar">
+                        <header class="header">
+                            <h1><a href="#">Trending topic title</a></h1>
+                        </header>
+                        <content>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </content>
+                    </aside>
+
+                    <aside class="right-sidebar">
+                        <header class="header">
+                            <h1><a href="#">Sponsored topic title</a></h1>
+                        </header>
+                        <content>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </content>
+                    </aside>
+            </div>
         </div>
     </div>
 </body>
