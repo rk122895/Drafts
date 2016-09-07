@@ -3,6 +3,9 @@ CSS to make a grid
 for reference go to this link
 http://j4n.co/blog/Creating-your-own-css-grid-system
 */
+body{
+    background-color: #fff;
+}
 .container {
     width: 100%;
     max-width: 100%;
@@ -26,17 +29,15 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
 }
 */
 .col-3 {
-    background-color: red;
     float: left;
     min-height: 1px;
-    width: 20%;
+    width: 19%;
 }
 
 .col-9 {
-    background-color: blue;
     float: left;
     min-height: 1px;
-    width: 60%;
+    width: 59%;
 }
 /*body elements*/
 /*nav bar css*/
@@ -114,6 +115,42 @@ http://j4n.co/blog/Creating-your-own-css-grid-system
 .left-modules{
     margin: auto; /*centers it easily*/
     text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 200%;
+    background-color: transparent;
+
+}
+.left-content{
+    background-color: rgba(0,0,0,0.04);
 }
 /*mid container*/
+.main-content{
+    background-color: rgba(0,0,0,0.04);
+}
+
+#post{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.1), 0 1px 0 rgba(0,0,0,0.3) inset;
+}
+.post-title, .post-title h1 a{
+    text-align: center;
+    text-decoration: none;
+}
 /*right container*/
+.right-content{
+    margin-left: 1%;
+}
+.header{
+    text-align: center;
+    text-decoration: none;
+}
