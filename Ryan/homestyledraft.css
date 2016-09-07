@@ -1,13 +1,15 @@
-.search_box{
-	position:fixed;
+#search_box{
+	position:absolute;
 	top: 5px;
 	background-color: #831515;
 	margin-left: 60%;
 	margin-bottom: -10px;
 }
-.mainHeader {
-	height: 36px;
+#mainHeader {
+	height: 45px;
 	width: 100%;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	background-image: url("images/bannertest.jpg");
+	background-size: contain;
 }
