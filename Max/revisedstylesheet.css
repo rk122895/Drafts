@@ -4,7 +4,8 @@ for reference go to this link
 http://j4n.co/blog/Creating-your-own-css-grid-system
 */
 body{
-    background-color: #fff;
+    background-color: #e6e6e6;
+    width: 100%;
 }
 .container {
     width: 100%;
@@ -103,6 +104,16 @@ body{
     background-color: #fff;
 }
 
+.navbar{
+    background-color: red;
+    width: 100%;
+}
+.container-fluid{
+    padding-top: 20px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
 /*left container*/
 .circle {
     border-radius: 50%;
@@ -121,11 +132,11 @@ body{
 
 }
 .left-content{
-    background-color: rgba(0,0,0,0.04);
+    background-color: ;
 }
 /*mid container*/
 .main-content{
-    background-color: rgba(0,0,0,0.04);
+    background-color:;
 }
 
 #post{
